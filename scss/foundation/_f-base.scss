@@ -1,0 +1,27 @@
+@use "f-variables" as v;
+
+html{
+    font-size:62.5%;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+body{
+    //color:v.$color-letterblack;
+    font-family: 'M+PLUS+1','Roboto';
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 100%;
+    position: relative;
+    top:0;
+    left:0;
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}

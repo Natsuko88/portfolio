@@ -1,0 +1,11 @@
+/*foundation*/
+@use "../scss/foundation/f-base";
+@use "../scss/foundation/f-variables";
+/*layout*/
+@use "../scss/layout/l-headar";
+@use "../scss/layout/l-main";
+@use "../scss/layout/l-footer";
+/*object*/
+@use "../scss/object/project/p-header";
+@use "../scss/object/project/p-gnav-ul";
+@use "../scss/object/component/c-wrapper";
