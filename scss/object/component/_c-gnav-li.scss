@@ -1,0 +1,8 @@
+@use "../../foundation/f-variables" as v;
+.c-gnav-li{
+    padding:10px;
+
+    &:hover{
+        background:radial-gradient(rgb(36,212,245),rgb(255,255,255));
+    }
+}

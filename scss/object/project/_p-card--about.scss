@@ -1,0 +1,10 @@
+@use "../../foundation/f-variables" as v;
+
+.p-card--about{
+    img{
+        width:300px;
+        height: 300px;
+        border-radius: 50%;
+        border-style: none;
+    }
+}

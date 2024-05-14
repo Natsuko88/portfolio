@@ -1,3 +1,13 @@
+@use "../../foundation/f-variables" as v;
 .p-gnav-ul{
     display: flex;
+    height:70px;
+    
+
+    .c-gnav-li{
+        height:70px;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+    }
 }
