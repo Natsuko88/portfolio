@@ -1,0 +1,15 @@
+.p-sec-contents{
+    display:flex;
+    flex-direction: column;
+    place-items: center;
+    width:100%;
+
+    .c-sec-title{
+        font-size: 3rem;
+        padding:10px;
+        text-align: center;
+        margin:4% 0;
+        width:100%;
+    }
+
+}

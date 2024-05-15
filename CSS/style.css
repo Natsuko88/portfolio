@@ -57,6 +57,10 @@ li {
   height: 70px;
   background-color: #E8FBFE;
 }
+.p-header .p-header-title {
+  display: flex;
+  align-items: center;
+}
 .p-header .c-icon {
   padding: 10px;
   width: 70px;
@@ -100,13 +104,129 @@ li {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.p-card--about {
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+}
 .p-card--about img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   border-style: none;
+}
+
+.c-logo {
+  color: #FFA500;
+}
+
+.p-site-title {
+  width: 300px;
+  height: 300px;
+  background-color: #ffffff;
+  opacity: 0.8;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.p-site-title .c-logo {
+  opacity: 1;
+  font-size: 5rem;
+  padding: 15%;
+}
+
+.c-sec-title {
+  color: #28C6E4;
+  background-color: #E8FBFE;
+}
+
+.p-sec-contents {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  width: 100%;
+}
+.p-sec-contents .c-sec-title {
+  font-size: 3rem;
+  padding: 10px;
+  text-align: center;
+  margin: 4% 0;
+  width: 100%;
+}
+
+.p-footer {
+  height: 70px;
+  display: block;
+  text-align: center;
+  background-color: #E8FBFE;
+  width: 100%;
+  padding: 20px;
+}
+
+.p-card--works {
+  width: 520px;
+  height: auto;
+  padding: 10px;
+  background-color: #E8FBFE;
+}
+.p-card--works img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-card--works .c-card--article {
+  margin-top: 20px;
+}
+
+.p-slider {
+  place-items: center;
+}
+
+.p-card--blog {
+  width: 500px;
+  background-color: #E8FBFE;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 5px 5px 20px #3EAFC4;
+}
+
+.p-form--contact {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.p-form--contact form .c-form {
+  margin: 10px 0;
+}
+.p-form--contact form .c-form input[type=text],
+.p-form--contact form .c-form input[type=email],
+.p-form--contact form .c-form textarea {
+  background: rgba(255, 255, 250, 0.5);
+  border: 1px #3EAFC4 solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+.p-form--contact form .c-form input[type=text],
+.p-form--contact form .c-form input[type=email] {
+  width: 100%;
+  max-width: 240px;
+}
+.p-form--contact form .c-form textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+
+.c-button {
+  background-color: #3EAFC4;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 /*foundation*/

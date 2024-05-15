@@ -1,6 +1,9 @@
 @use "../../foundation/f-variables" as v;
 
 .p-card--about{
+    display: flex;
+    flex-direction: row;
+    margin:5%;
     img{
         width:300px;
         height: 300px;

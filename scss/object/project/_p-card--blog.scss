@@ -1,0 +1,9 @@
+@use "../../foundation/f-variables" as v;
+.p-card--blog{
+    width:500px;
+    background-color: v.$color-paleblue;
+    margin-bottom:30px;
+    border-radius: 10px;
+    padding:30px;
+    box-shadow: 5px 5px 20px v.$color-darkblue;
+}

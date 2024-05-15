@@ -14,7 +14,12 @@
 <body>
     <header class="l-header p-header ">
         <div class="c-wrapper">
-            <img class="c-icon" src="img/icon-bgnon.png">
+            <div class="p-header-title">
+                <img class="c-icon" src="img/icon-bgnon.png">
+                <h1 class="c-logo">
+                    Natsuko's portfolio
+                </h1>
+            </div>
             <nav class="p-gnav">
                 <ul class="p-gnav-ul">
                     <li class="c-gnav-li">
@@ -35,14 +40,13 @@
     </header>
     <main class="l-main p-main">
         <section class="p-tophead">
-            tophead
             <div class="p-site-title">
-                <h1 class="c-logo">
+                <h2 class="c-logo">
                     Natsuko's portfolio
-                </h1>
+                </h2>
             </div> 
         </section>
-        <section id="about" class="p-sec-contents">
+        <section id="about" class="p-sec-contents p-sec-contents--about">
             <h2 class="c-sec-title">About</h2>
             <div class="p-card--about">
                 <img class="c-author-img" src="img/author.png">
@@ -54,20 +58,38 @@
         <section id="works" class="p-sec-contents">
             <h2 class="c-sec-title">Works</h2>
             <div class="p-slider">
-                スライダー
+                <div class="p-card--works">
+                    <img class="c-card--works" src="img/icon.png">
+                    <article class="c-card--article">
+                        テキストです。テキストです。テキストです。テキストです。テキストです。テキストです。
+                    </article>
+                </div>
             </div>
         </section>
         <section id="contact" class="p-sec-contents">
             <h2 class="c-sec-title">Contact</h2>
             <div class="p-form--contact">
-                <form></form>
+                <form action="#">
+                    <div class="c-form">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="your-name">
+                    </div>
+                    <div class="c-form">
+                        <label for="e-mail">メールアドレス</label>
+                        <input type="email" id="email" name="your-email">
+                    </div>
+                    <div class="c-form">
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" name="your-message"></textarea>
+                    </div>
+                    <input type="submit" class="c-button" value="送信">
+                </form>
             </div>
         </section>
         <section id="blog" class="p-sec-contents">
             <h2 class="c-sec-title">Blog</h2>
             <section class="p-card--blog">
-                <img>
-                <article class="p-card-article">
+                <article class="c-card--article">
                     抜粋です。抜粋です。抜粋です。
                 </article>
             </section>

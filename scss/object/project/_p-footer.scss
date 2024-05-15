@@ -1,0 +1,10 @@
+@use "../../foundation/f-variables" as v;
+
+.p-footer{
+    height: 70px;
+    display: block;
+    text-align: center;
+    background-color: v.$color-paleblue;
+    width: 100%;
+    padding:20px;
+}

@@ -1,0 +1,7 @@
+@use "../../foundation/f-variables" as v;
+.c-button{
+    background-color: v.$color-darkblue;
+    color:v.$color-white;
+    border-radius: 10px;
+    padding:10px;
+}

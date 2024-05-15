@@ -1,0 +1,6 @@
+@use "../../foundation/f-variables" as v;
+
+.c-sec-title{
+    color:v.$color-blue;
+    background-color: v.$color-paleblue;
+}

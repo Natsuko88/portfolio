@@ -1,0 +1,31 @@
+@use "../../foundation/f-variables" as v;
+.p-form--contact{
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    form{
+        .c-form{
+            margin:10px 0;
+
+            input[type="text"],
+            input[type="email"],
+            textarea{
+                background:rgba(255,255,250,.5);
+                border:1px v.$color-darkblue solid;
+                border-radius: 5px;
+                padding:10px;
+            }
+
+            input[type="text"],
+            input[type="email"]{
+                width: 100%;
+                max-width:240px;
+            }
+            textarea{
+                width:100%;
+                max-width: 480px;
+                height:6rem;
+            }
+        }
+    }
+}
