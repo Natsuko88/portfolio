@@ -1,13 +1,27 @@
 @use "../../foundation/f-variables" as v;
+/*sp,tab
 .p-gnav-ul{
-    display: flex;
-    height:70px;
-    
+    display:block;
+}*/
 
-    .c-gnav-li{
-        height:70px;
-        font-size: 2rem;
+/*ハンバーガーボタン*/
+
+/*is-active*/
+
+
+
+/*PC*/
+@include v.pc{
+    .p-gnav-ul{
         display: flex;
-        align-items: center;
+        height:70px;
+        
+    
+        .c-gnav-li{
+            height:70px;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+        }
     }
 }

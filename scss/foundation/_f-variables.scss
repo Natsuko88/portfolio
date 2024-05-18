@@ -14,3 +14,20 @@ $color-darkblue:#3EAFC4;
 $color-blue:#28C6E4;
 $color-paleblue:#E8FBFE;
 $colo-orange:#FFA500;
+
+/*mixin*/
+//breakPoint
+$PC:1025px;
+$tab:480px;
+
+@mixin pc{
+    @media screen and(min-width:($PC)){
+        @content;
+    }
+}
+
+@mixin tab{
+    @media screen and(min-width:($tab)){
+        @content;
+    }
+}

@@ -1,10 +1,11 @@
 @use "../../foundation/f-variables" as v;
 
+
 .p-header{
     display: flex;
     justify-content: center;
     height:70px;
-    background-color: v.$color-paleblue;
+    background-color: v.$color-white;
 
     .p-header-title{
         display: flex;
@@ -19,3 +20,5 @@
     
     
 }
+
+

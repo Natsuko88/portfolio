@@ -1,9 +1,15 @@
 @use "../../foundation/f-variables" as v;
 .p-card--blog{
-    width:500px;
-    background-color: v.$color-paleblue;
+    display:grid;
+    grid-template-columns: repeat(3,minmax(300px,1fr));
+    gap:30px;
     margin-bottom:30px;
-    border-radius: 10px;
-    padding:30px;
-    box-shadow: 5px 5px 20px v.$color-darkblue;
+    
+
+    .c-card--article{
+        max-width:500px;
+        background-color: v.$color-paleblue;
+        padding:30px;
+        box-shadow: 2px 2px 10px v.$color-darkblue;
+    }
 }
