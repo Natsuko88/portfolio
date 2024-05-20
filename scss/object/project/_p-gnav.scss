@@ -1,0 +1,12 @@
+@use "../../foundation/f-variables" as v;
+
+.p-gnav{
+    width:0%;
+    right:0;
+}
+
+/*is-active*/
+
+.p-gnav.is-active{
+    width: 100%;
+}

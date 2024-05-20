@@ -12,7 +12,8 @@ body{
     font-family: 'M+PLUS+1','Roboto';
     font-size: 1.6rem;
     font-weight: 700;
-    width: 100%;
+    color:v.$color-brown;
+    width: 100vw;
     position: relative;
     top:0;
     left:0;
@@ -23,6 +24,8 @@ a{
     text-decoration: none;
     cursor: pointer;
     color:inherit;
+    display: block;
+    width:auto;
 }
     
 }

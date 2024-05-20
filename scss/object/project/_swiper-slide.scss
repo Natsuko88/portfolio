@@ -1,13 +1,13 @@
 @use "../../foundation/f-variables" as v;
 
-.swiper-wrapper .swiper-slide {
+.swiper-wrapper.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width:1000px;
+    max-width: 450px;
     max-height: 500px;
     
     img{
@@ -17,4 +17,11 @@
         object-fit: cover;
     }
     
+}
+
+/*pc*/
+@include v.pc{
+    .swipwe-wrapper.swiper-slide{
+        max-width:1000px;
+    }
 }

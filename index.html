@@ -15,17 +15,18 @@
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-    <header class="l-header p-header ">
-        <div class="c-wrapper">
-            <div class="p-header-title">
-                <img class="c-icon" src="img/icon-bgnon.png">
-                <h1 class="c-logo">
-                    Natsuko's portfolio
-                </h1>
-            </div>
-            <!--<button class="p-hbutton c-button">
+<header class="l-header p-header">
+    <div class="c-wrapper">
+        <div class="p-header-title">
+            <img class="c-icon" src="img/icon-bgnon.png">
+            <h1 class="c-logo">
+                Natsuko's portfolio
+            </h1>
+        </div>
+        <div class="p-nav">
+            <button class="p-hbutton c-button">
                 MENU
-            </button>-->
+            </button>
             <nav class="p-gnav">
                 <ul class="p-gnav-ul">
                     <li class="c-gnav-li">
@@ -42,93 +43,94 @@
                     </li>
                 </ul>
             </nav>
+        </div>  
+    </div>
+</header>
+<main class="l-main p-main">
+    <section class="p-tophead">
+        <div class="p-site-title">
+            <h2 class="c-logo">
+                Natsuko's portfolio
+            </h2>
+        </div> 
+    </section>
+    <section id="about" class="p-sec-contents p-sec-contents--about">
+        <h2 class="c-sec-title">About</h2>
+        <div class="p-card--about">
+            <img class="c-author-img" src="img/author.png">
+            <p>
+                テキストです。テキストです。テキストです。テキストです。テキストです。テキストです。
+            </p>
         </div>
-    </header>
-    <main class="l-main p-main">
-        <section class="p-tophead">
-            <div class="p-site-title">
-                <h2 class="c-logo">
-                    Natsuko's portfolio
-                </h2>
-            </div> 
-        </section>
-        <section id="about" class="p-sec-contents p-sec-contents--about">
-            <h2 class="c-sec-title">About</h2>
-            <div class="p-card--about">
-                <img class="c-author-img" src="img/author.png">
-                <p>
-                    テキストです。テキストです。テキストです。テキストです。テキストです。テキストです。
-                </p>
+    </section>
+    <section id="works" class="p-sec-contents">
+        <h2 class="c-sec-title">Works</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <img src="img/icon.png">
+                <p>Slide 1Slide 1Slide 1Slide 1Slide 1Slide 1Slide 1Slide 1</p>
             </div>
-        </section>
-        <section id="works" class="p-sec-contents">
-            <h2 class="c-sec-title">Works</h2>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="img/icon.png">
-                    <p>Slide 1Slide 1Slide 1Slide 1Slide 1Slide 1Slide 1Slide 1</p>
-                </div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 4</div>
-                  <div class="swiper-slide">Slide 5</div>
-                  <div class="swiper-slide">Slide 6</div>
-                  <div class="swiper-slide">Slide 7</div>
-                  <div class="swiper-slide">Slide 8</div>
-                  <div class="swiper-slide">Slide 9</div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
-        </section>
-        <section id="contact" class="p-sec-contents">
-            <h2 class="c-sec-title">Contact</h2>
-            <div class="p-form--contact">
-                <form action="#">
-                    <div class="c-form">
-                        <label for="name">お名前</label>
-                        <input type="text" id="name" name="your-name">
-                    </div>
-                    <div class="c-form">
-                        <label for="e-mail">メールアドレス</label>
-                        <input type="email" id="email" name="your-email">
-                    </div>
-                    <div class="c-form">
-                        <label for="message">メッセージ</label>
-                        <textarea id="message" name="your-message"></textarea>
-                    </div>
-                    <input type="submit" class="c-button" value="送信">
-                </form>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
+    </section>
+    <section id="contact" class="p-sec-contents">
+        <h2 class="c-sec-title">Contact</h2>
+        <div class="p-form--contact">
+            <form action="#">
+                <div class="c-form">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="your-name">
+                </div>
+                <div class="c-form">
+                    <label for="e-mail">メールアドレス</label>
+                    <input type="email" id="email" name="your-email">
+                </div>
+                <div class="c-form">
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="your-message"></textarea>
+                </div>
+                <input type="submit" class="c-button" value="送信">
+            </form>
+        </div>
+    </section>
+    <section id="blog" class="p-sec-contents">
+        <h2 class="c-sec-title">Blog</h2>
+        <section class="p-card--blog">
+            <article class="c-card--article">
+                抜粋です。抜粋です。抜粋です。
+            </article>
+            <article class="c-card--article">
+                抜粋です。抜粋です。抜粋です。
+            </article>
+            <article class="c-card--article">
+                抜粋です。抜粋です。抜粋です。
+            </article>
+            <article class="c-card--article">
+                抜粋です。抜粋です。抜粋です。
+            </article>
+            <article class="c-card--article">
+                抜粋です。抜粋です。抜粋です。
+            </article>
+            <article class="c-card--article">
+                抜粋です。抜粋です。抜粋です。
+            </article>
+            <article class="c-card--article">
+                抜粋です。抜粋です。抜粋です。
+            </article>
         </section>
-        <section id="blog" class="p-sec-contents">
-            <h2 class="c-sec-title">Blog</h2>
-            <section class="p-card--blog">
-                <article class="c-card--article">
-                    抜粋です。抜粋です。抜粋です。
-                </article>
-                <article class="c-card--article">
-                    抜粋です。抜粋です。抜粋です。
-                </article>
-                <article class="c-card--article">
-                    抜粋です。抜粋です。抜粋です。
-                </article>
-                <article class="c-card--article">
-                    抜粋です。抜粋です。抜粋です。
-                </article>
-                <article class="c-card--article">
-                    抜粋です。抜粋です。抜粋です。
-                </article>
-                <article class="c-card--article">
-                    抜粋です。抜粋です。抜粋です。
-                </article>
-                <article class="c-card--article">
-                    抜粋です。抜粋です。抜粋です。
-                </article>
-            </section>
-        </section>
-    </main>
+    </section>
+</main>
 <footer class="l-footer p-footer">
     <small class="p-copyright">copyright:natsukoweb2404</small>
 </footer>

@@ -1,7 +1,10 @@
 @use "../../foundation/f-variables" as v;
+/*sp*/
 .p-card--blog{
     display:grid;
-    grid-template-columns: repeat(3,minmax(300px,1fr));
+    grid-column: auto;
+    grid-row: auto;
+    max-width: 1024px;
     gap:30px;
     margin-bottom:30px;
     
@@ -11,5 +14,13 @@
         background-color: v.$color-paleblue;
         padding:30px;
         box-shadow: 2px 2px 10px v.$color-darkblue;
+    }
+    
+}
+
+/*tab*/
+@include v.tab{
+    .p-card--blog{
+        grid-template-columns: repeat(3,minmax(240px,1fr));
     }
 }

@@ -1,0 +1,54 @@
+@use "../../foundation/f-variables" as v;
+
+/*ハンバーガーボタン*/
+.p-hbutton{
+    display: block;
+    position: relative;
+    z-index: 200;
+    border-radius: 0%;
+    padding:18px;
+    right: 0;
+    width:85px;
+    height:70px;
+    font-weight: 400;
+
+    &::after,&::before{
+        content:"";
+        height:4px;
+        width:50px;
+        display: block;
+        background-color: v.$color-white;
+        position: absolute;
+    }
+
+    &::before{
+        top:25%;
+    }
+
+    &::after{
+        top:70%;
+    }
+    
+}
+
+/*is-active*/
+.p-hbutton.is-active{
+    color:transparent;
+
+    &::before{
+        transform:translateY(10px) rotate(45deg);
+    }
+
+    &::after{
+        transform:translateY(-23px) rotate(-45deg);
+    }
+}
+
+
+
+/*pc*/
+@include v.pc{
+    .p-hbutton{
+        display: none;
+    }
+}

@@ -1,5 +1,18 @@
+@use "../../foundation/f-variables" as v;
+
 .swiper {
-  width: 100%;
+  max-width: 480px;
   height: 100%;
+
+  .swiper-button-next,.swiper-button-prev{
+    color:v.$color-brown;
+  }
   
+  }
+
+  /*pc*/
+  @include v.pc{
+    .swiper{
+      max-width:1024px;
+    }
   }
