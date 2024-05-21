@@ -1,7 +1,7 @@
 @use "../../foundation/f-variables" as v;
 
 .swiper {
-  max-width: 480px;
+  width: 100%;
   height: 100%;
 
   .swiper-button-next,.swiper-button-prev{
@@ -10,9 +10,3 @@
   
   }
 
-  /*pc*/
-  @include v.pc{
-    .swiper{
-      max-width:1024px;
-    }
-  }

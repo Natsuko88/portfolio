@@ -2,12 +2,23 @@
 
 .p-card--about{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin:5%;
     img{
         width:300px;
         height: 300px;
         border-radius: 50%;
         border-style: none;
+    }
+    p{
+        padding:5%;
+        line-height: 2;
+    }
+}
+
+/*tab*/
+@include v.tab{
+    .p-card--about{
+        flex-direction: row;
     }
 }

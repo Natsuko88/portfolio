@@ -1,0 +1,35 @@
+@use "../../foundation/f-variables" as v;
+
+.p-skills{
+    .p-skill-icon{
+        display: grid;
+        grid-template-columns: repeat(3,minmax(120px,1fr));
+        gap:30px;
+        color:v.$color-brown;
+        
+        i{
+            display: block;
+            font-size: 5rem;
+            text-align: center;
+        }
+    }
+    
+}
+
+/*tab*/
+@include v.tab{
+    .p-skills{
+        .p-skill-icon{
+            grid-template-columns: repeat(3,minmax(150px,1fr));
+        }
+    }
+
+}
+/*pc*/
+@include v.pc{
+    .p-skills{
+        .p-skill-icon{
+            grid-template-columns: repeat(3,minmax(240px,1fr));
+        }
+    }
+}

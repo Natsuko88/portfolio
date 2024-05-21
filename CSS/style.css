@@ -137,7 +137,7 @@ li {
 
 .p-card--about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 5%;
 }
 .p-card--about img {
@@ -146,7 +146,17 @@ li {
   border-radius: 50%;
   border-style: none;
 }
+.p-card--about p {
+  padding: 5%;
+  line-height: 2;
+}
 
+/*tab*/
+@media screen and (min-width: 480px) {
+  .p-card--about {
+    flex-direction: row;
+  }
+}
 .c-logo {
   color: #FFA500;
 }
@@ -204,7 +214,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 450px;
+  max-width: 360px;
   max-height: 500px;
 }
 .swiper-wrapper.swiper-slide img {
@@ -344,6 +354,35 @@ li {
   width: 100%;
 }
 
+.u-sec-title {
+  color: #462101;
+  font-weight: 400;
+}
+
+.p-skills .p-skill-icon {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  gap: 30px;
+  color: #462101;
+}
+.p-skills .p-skill-icon i {
+  display: block;
+  font-size: 5rem;
+  text-align: center;
+}
+
+/*tab*/
+@media screen and (min-width: 480px) {
+  .p-skills .p-skill-icon {
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+  }
+}
+/*pc*/
+@media screen and (min-width: 1025px) {
+  .p-skills .p-skill-icon {
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+  }
+}
 /*foundation*/
 /*layout*/
 /*object*/
